@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root{
+
+  /* schemes */
+  --clr-brand: #385C94;
+  --clr-secondary:#D7EFFF;
+  --clr-primary: #B0DFFF;
+
+  /* text */
+  --clr-text-1: #274E68;
+  --clr-text-2: white;
+
+  /* backgrounds */
+
+  --clr-bg-1: #274E68;
+  --clr-bg-2: white;
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+body{
+
+  font-family: "Spartan";
+  font-size: 1.6rem;
+
+  color: var(--clr-text-1);
+
+
+}
+
+h1,h2,h3,h4{
+  font-weight: bold;
+
+}
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+}
+
+button{
+  font-family: "Spartan";
+
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+section{
+}
+
+.container{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0rem 2rem;
+}

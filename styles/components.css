@@ -1,0 +1,77 @@
+/* Buttons */
+.btn{
+  cursor: pointer;
+  background-color: var(--clr-brand);
+  display: inline-flex;
+  align-items: center;
+  border: none;
+
+  padding: 12px 20px;
+  gap: 12px;
+  border-radius: 2px;
+  font-size: 1.6rem;
+
+  line-height: 1.8rem;
+  font-weight: normal;
+
+
+  color: var(--clr-text-2);
+  
+
+}
+
+.btn--outlined{
+  background-color: var(--clr-bg-2);
+  border: 1px solid var(--clr-brand);
+  color: var(--clr-brand);
+}
+
+/* Inputs */
+
+.input{
+  border: 1px solid var(--clr-brand);
+  border-radius: 2px;
+  padding: 16px 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--clr-brand);
+  line-height: 18px;
+
+}
+
+.input::placeholder{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--clr-brand);
+  font-family: "Spartan";
+  line-height: 18px;
+
+}
+
+/* header */
+
+.header{
+  font-weight: 700;
+  line-height: 8rem;
+
+}
+
+.header h2,
+.header h1{
+  font-size: 4.8rem;
+}
+
+/* with dark bg */
+.header--primary{
+  color: var(--clr-text-2);
+  background-color: var(--clr-bg-1);
+
+}
+
+/* with light bg */
+.header--secondary{
+  color: var(--clr-text-1);
+  background-color: var(--clr-secondary);
+  
+}
+
