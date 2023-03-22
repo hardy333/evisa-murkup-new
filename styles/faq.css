@@ -73,4 +73,21 @@
   padding-top: 16px;
 
 
+
+
+}
+
+.accordion-body p{
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+
+  /* Text color */
+
+  color: #274E68;
+
 }

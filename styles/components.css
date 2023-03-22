@@ -46,7 +46,7 @@
 
 .input::placeholder{
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--clr-brand);
   font-family: "Spartan";
   line-height: 18px;
@@ -84,6 +84,7 @@
 .header h2,
 .header h1{
   font-size: 4.8rem;
+  font-weight: 700;
 }
 
 /* with dark bg */
