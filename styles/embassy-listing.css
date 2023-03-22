@@ -1,0 +1,70 @@
+.embassy-listing{
+  padding-top: 10rem;
+
+}
+
+.embassy-listing__container{
+  margin-top: 6rem;
+
+}
+
+.letter-list{
+  margin-bottom: 10rem;
+  display: flex;
+  gap: 3rem;
+
+}
+
+.letter-list li{
+  cursor: pointer;
+  font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height, or 140% */
+
+text-decoration-line: underline;
+
+/* Text color */
+
+color: var(--clr-text-1);
+
+}
+
+.letter-list li:hover{
+  text-decoration: underline;
+}
+
+.embassy-list-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* gap: 6rem; */
+  
+
+}
+
+.embassy-list{
+  
+
+
+}
+
+.embassy-list h2{
+  margin-bottom: 2rem;
+
+}
+
+.embassy-list ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.embassy-list li{
+  cursor: pointer;
+  font-size: 1.4rem;
+
+
+}
+.embassy-list li:hover{
+  text-decoration: underline;
+}

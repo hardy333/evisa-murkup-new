@@ -1,0 +1,171 @@
+/* Visa Types */
+.visa-types{
+  padding-top: 10rem;
+
+}
+
+.visa-types h2{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: var(--clr-text-1);
+  margin-top: 3.2rem;
+  color: #274E68;
+}
+
+
+.visa-types__container{
+  margin-top: 10rem;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.visa-types-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 12px;
+  gap: 28px;
+  /* Primary color */
+  border: 1px solid #B0DFFF;
+  border-radius: 2px;
+
+}
+
+.visa-types-card h3{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+  color: #385C94;
+}
+
+.visa-types-card__valid{
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  color: #385C94;
+}
+
+.visa-types-card__entry,
+.visa-types-card__fee{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #274E68;
+
+}
+
+/* Form */
+
+
+.pre-app-form{
+  margin-top: 6rem;
+
+
+}
+
+.pre-app-form__container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 40px;
+  gap: 16px;
+
+  background: rgba(176, 223, 255, 0.3);
+  border-radius: 2px;
+
+
+}
+
+.pre-app-form__input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+
+
+}
+
+
+.pre-app-form .btn{
+  display: block;
+  margin: 0px auto;
+  margin-top: 4rem;
+  padding: 17px 32px;
+
+}
+
+
+
+/* Travel and Health */
+
+.travel-health{
+  margin-top: 10rem;
+
+}
+
+.travel-health p{
+  margin-top: 6rem;
+
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  color: #274E68;
+
+}
+
+
+
+/* Faq */
+
+.visa-types-faq{
+  margin-top: 10rem;
+}
+
+
+.visa-types-faq__container{
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+
+}
+
+.visa-types-faq-card{
+  display: flex;
+  padding: 40px 28px;
+
+  background: rgba(176, 223, 255, 0.3);
+  border-radius: 2px;
+
+}
+
+.visa-types-faq-card .btn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.visa-types-faq .container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.visa-types-faq .container > .btn{
+  display: inline-flex;
+  margin-left: auto;
+  margin-top: 4rem;
+  
+}

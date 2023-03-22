@@ -1,0 +1,119 @@
+.contact{
+  padding-top: 10rem;
+
+}
+
+.contact__container{
+  margin-top: 3.2rem;
+
+}
+
+.contact h2{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+
+  color: var(--clr-text-1);
+  margin-bottom: 6rem;
+
+
+}
+
+.contact-flex{
+  display: flex;
+  gap: 116px;
+
+}
+
+.contact-form{
+  max-width: 640px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+
+  width: 640px;
+
+  background: rgba(176, 223, 255, 0.3);
+  border-radius: 2px;
+  flex-shrink: 1;
+
+
+
+
+}
+
+.contact-form .btn{
+  justify-content: center;
+}
+
+
+/* Left side */
+.contact-login-container{
+  max-width: 436px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  flex-shrink:2;
+
+
+}
+
+.contact-login-card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  gap: 16px;
+  border: 1px dashed #B0DFFF;
+  border-radius: 2px;
+
+}
+
+.contact-login-card h3{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+
+  color: #385C94;
+
+}
+
+.contact-login-card p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #274E68;
+
+}
+
+
+.contact-login-card img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.action-card{
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 28px;
+  gap: 40px;
+  background: rgba(176, 223, 255, 0.3);
+  border-radius: 2px;
+
+}
+
+.action-card .btn{
+  width: 100%;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  justify-content: center;
+}

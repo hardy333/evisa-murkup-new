@@ -54,7 +54,7 @@ body{
 }
 
 .navbar__btns__hr{
-  width: 2px;
+  width: 1px;
   background-color: var(--clr-primary);
   align-self: stretch;
   border-radius: 1px;
