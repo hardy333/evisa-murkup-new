@@ -1,27 +1,12 @@
-const btns = document.querySelectorAll(".accordion-button");
-const collapses = document.querySelectorAll(".collapse");
-console.log(btns);
+const burgerBtn = document.querySelector(".burger");
+const navbarNavContainer = document.querySelector(".navbar__nav-container");
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", handleClick);
+burgerBtn.addEventListener("click", () => {
+  burgerBtn.classList.toggle("opened");
+  navbarNavContainer.classList.toggle("opened");
+  if (burgerBtn.classList.contains("opened")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 });
-
-function handleClick(e) {
-  const currTarget = e.currentTarget;
-
-  const heading = currTarget.parentElement;
-  const collapse = heading.nextElementSibling;
-
-  closePrevFaq(collapse);
-
-  if (collapse) {
-    collapse.classList.toggle("show");
-  }
-}
-
-function closePrevFaq(currCollapse) {
-  const prevOpenedCollapse = document.querySelector(".collapse.show");
-  if (prevOpenedCollapse && prevOpenedCollapse !== currCollapse) {
-    prevOpenedCollapse.classList.remove("show");
-  }
-}

@@ -1,4 +1,7 @@
 /* Buttons */
+/* Buttons */
+/* Buttons */
+
 .btn{
   cursor: pointer;
   background-color: var(--clr-brand);
@@ -26,6 +29,8 @@
   color: var(--clr-brand);
 }
 
+/* Inputs */
+/* Inputs */
 /* Inputs */
 
 .input{
@@ -67,6 +72,8 @@
 }
 
 /* header */
+/* header */
+/* header */
 
 .header{
   font-weight: 700;
@@ -93,3 +100,77 @@
   
 }
 
+
+
+/* Burger */
+/* Burger */
+/* Burger */
+
+.burger{
+  --p: 0.7rem;
+
+  cursor: pointer;
+  width: 5rem;
+  height: 4rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--p);
+  justify-content: space-between;
+  background-color: transparent;
+
+
+}
+
+
+.burger__line{
+  width: calc(100% - var(--p) * 2);
+  height: 3px;
+
+  background-color: var(--clr-brand);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  position: absolute;
+
+}
+
+.burger__line--1{
+  top: var(--p);
+  
+
+}
+
+.burger__line--2{
+  /* transform: translate(0px, 0px) rotate(45deg); */
+  top: 50%;
+  transform: translate(0%, -50%);
+
+}
+
+.burger__line--3{
+  bottom: var(--p);
+
+}
+
+/* active */
+.burger.opened .burger__line--1{
+  top: 50%;
+  transform: translate(0, -50%) rotate(315deg);
+  /* background-color: red; */
+}
+
+.burger.opened .burger__line--2{
+  transform: translate(-70%, 0);
+  opacity: 0;
+  
+}
+
+.burger.opened .burger__line--3{
+  bottom: 50%;
+  transform: translate(0, 50%) rotate(-315deg);
+  /* background-color: yellow; */
+
+
+}

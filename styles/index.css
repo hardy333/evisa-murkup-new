@@ -1,7 +1,7 @@
 
 body{
-  /* height of navbar */
-  padding-top: 8.4rem;
+  --navbar-height:7.88rem; 
+  padding-top: var(--navbar-height);
 }
 
 /* Navbar Start */
@@ -15,6 +15,17 @@ body{
   left: 0;
   width: 100%;
   box-shadow: 0px 4px 4px rgba(215, 239, 255, 0.25);
+  z-index: 100;
+
+}
+
+.navbar .burger{
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(0, -50%);
+
+  display: none;
 
 }
 
@@ -22,12 +33,23 @@ body{
   display: flex;
   align-items: center;
 
+
 }
 
 
 
 .navbar__logo{
   /* width: 100px; */
+}
+
+.navbar__nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+
+
 }
 
 .navbar__nav{
@@ -45,7 +67,6 @@ body{
 }
 
 .navbar__btns{
-  margin-left: auto;
 
   display: flex;
   align-items: center;
@@ -68,8 +89,9 @@ body{
   min-height: 700px;
   padding: 0.5rem 0rem;
 
+
   /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.svg); */
-  /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.png); */
+  background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.png);
   background-repeat: no-repeat no-repeat;
   background-size: cover;
   /* background-position: 0 -100px; */
@@ -437,4 +459,68 @@ color: var(--clr-text-2)
   display: flex;
   gap: 2rem;
 
+}
+
+
+@media screen and (max-width: 1000px){
+
+  /* navbar */
+  .navbar .burger{
+    display: block;
+  }
+  
+  .navbar .burger.opened{
+    right: 3.5rem;
+  }
+
+  .navbar__nav-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s ease;
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 0;
+
+
+  }
+
+
+
+  .navbar__nav-container.opened{
+    height: calc(100vh - var(--navbar-height));
+  
+  }
+
+
+  .navbar__nav{
+    margin-left: 0;
+    order: 2;
+    flex-direction: column;
+    padding: 2rem;
+
+  }
+
+  .navbar__btns{
+    order: 1;
+    padding: 2rem;
+
+
+  }
+
+  .navbar__nav-container > *{
+    opacity:0;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar__nav-container.opened > *{
+    opacity: 1;
+  }
+
+  
 }
