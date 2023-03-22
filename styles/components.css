@@ -157,7 +157,7 @@
 /* active */
 .burger.opened .burger__line--1{
   top: 50%;
-  transform: translate(0, -50%) rotate(315deg);
+  transform: translate(0, -50%) rotate(135deg);
   /* background-color: red; */
 }
 
@@ -169,7 +169,7 @@
 
 .burger.opened .burger__line--3{
   bottom: 50%;
-  transform: translate(0, 50%) rotate(-315deg);
+  transform: translate(0, 50%) rotate(-135deg);
   /* background-color: yellow; */
 
 
