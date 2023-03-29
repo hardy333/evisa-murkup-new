@@ -1,5 +1,5 @@
 .faq{
-  padding-top: 10rem;
+  padding-top: 16rem;
 
 }
 
@@ -14,12 +14,15 @@
   border-radius: 2px;
 
   padding: 40px 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
 }
 
 
 .accordion-item{
   border: 1px solid #385C94;
-  margin-bottom: 3rem;
 
 }
 
@@ -126,7 +129,18 @@
 
 }
 
+.accordion-line{
+  height: 0px;
+  border: 1px solid #ffffffc6;
+  width: 100%;
+
+}
+
 @media (max-width: 800px){
+  .faq{
+    padding-top: 10rem;
+  
+  }
 
   .accordion{
     padding: 4rem;
@@ -154,12 +168,10 @@
 
   .accordion{
     padding: 2rem;
+    gap: 2rem;
   }
 
-  .accordion-item{
-    margin-bottom: 2.5rem;
-  }
-
+ 
 
   .accordion-button{
     font-size: 1.6rem;
@@ -191,13 +203,16 @@
 }
 
 @media (max-width: 500px) {
+  .accordion{
+    gap: 1.5rem;
+  }
 
   .faq__container{
     padding: 0;
   }
 
   .faq-arrow{
-  right: 1rem;
+    right: 1rem;
 
   }
   
