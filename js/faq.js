@@ -11,16 +11,49 @@ function handleClick(e) {
   const heading = currTarget.parentElement;
   const collapse = heading.nextElementSibling;
 
-  closePrevFaq(collapse);
+  closePrevFaq(collapse, currTarget);
+
+  currTarget.classList.toggle("accordion-button--active");
 
   if (collapse) {
-    collapse.classList.toggle("show");
+    const sccrollHeight = collapse.scrollHeight;
+    const clientHeight = collapse.clientHeight;
+    console.log(sccrollHeight);
+
+    if (sccrollHeight === clientHeight) {
+      collapse.style.height = 0 + "px";
+    } else {
+      collapse.style.height = sccrollHeight + "px";
+    }
   }
 }
 
-function closePrevFaq(currCollapse) {
-  const prevOpenedCollapse = document.querySelector(".collapse.show");
+// handling previously opened accordion item deactivation.
+function closePrevFaq(currCollapse, currButton) {
+  const prevButton = document.querySelector(".accordion-button--active");
+  if (!prevButton) return;
+  const accordionHeding = prevButton.parentElement;
+  const prevOpenedCollapse = accordionHeding.nextElementSibling;
+
+  // closing collapse
   if (prevOpenedCollapse && prevOpenedCollapse !== currCollapse) {
-    prevOpenedCollapse.classList.remove("show");
+    prevOpenedCollapse.style.height = "0px";
+  }
+
+  // rotating arrow
+  if (prevButton && prevButton !== currButton) {
+    prevButton.classList.remove("accordion-button--active");
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const activeFaqButton = document.querySelector(".accordion-button--active");
+  if (activeFaqButton) {
+    const accordionHeding = activeFaqButton.parentElement;
+    const collapse = accordionHeding.nextElementSibling;
+    const sccrollHeight = collapse.scrollHeight;
+    console.log(sccrollHeight);
+
+    collapse.style.height = sccrollHeight + "px";
+  }
+});

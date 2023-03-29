@@ -39,6 +39,8 @@
   background: #FFFFFF;
   width: 100%;
   padding: 16px 20px;
+  padding-right: 3.5rem;
+
   cursor: pointer;
   border: none;
   display: flex;
@@ -53,27 +55,60 @@
   color: #274E68;
   text-align: start;
 
+  position: relative;
+
 
 }
 
+.faq-arrow{
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(0, -50%);
+  transition: 0.3s ease-in-out;
+
+}
+
+.accordion-button--active .faq-arrow{
+  transform: translate(0, -50%) rotate(180deg);
+
+}
 
 /* BODY ALL */
 .accordion-collapse{
-  display: none;
-  padding: 16px 20px;
+  /* display: none; */
   padding-top: 0;
   background-color: #fff;
+
+  height: 0px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
   
 }
 
 .accordion-collapse.show{
-  display: block;
+  /* display: block; */
+
+}
+
+.accordion-body-wrapper{
+
 }
 
 .accordion-body{
-  border-top: 1px solid #D7EFFF;
-  padding-top: 16px;
+  padding: 16px;
+  position: relative;
 
+}
+
+.accordion-body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 16px;
+  right: 16px;
+  height: 1px;
+  background-color: var(--clr-secondary);
 }
 
 .accordion-body p{
@@ -129,11 +164,11 @@
   .accordion-button{
     font-size: 1.6rem;
     padding: 1rem;
+    padding-right: 3.5rem;
 
   }
   
   .accordion-collapse{
-    padding: 1rem;
     font-size: 1.4rem;
     padding-top: 0;
     
@@ -142,14 +177,28 @@
   .accordion-body{
     margin-top: 0;
     padding-top: 1rem;
+    padding: 1rem;
+
+  }
+
+  .accordion-body::before{
+ 
+    left: 1rem;
+    right: 1rem;
   }
   
   
 }
 
 @media (max-width: 500px) {
+
   .faq__container{
     padding: 0;
+  }
+
+  .faq-arrow{
+  right: 1rem;
+
   }
   
 }
