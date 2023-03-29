@@ -67,3 +67,71 @@
 
   color:  var(--clr-text-1);
 }
+
+
+
+@media (max-width: 950px){
+  .embassy-info-list{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  
+  }
+
+  .embassy-info-card{
+  }
+
+}
+
+@media (max-width: 950px){
+  .embassy-info-list{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+  
+  }
+  .embassy-information-form .btn{
+    margin-left: 0;
+  }
+
+  .embassy-info-card{
+  }
+
+}
+
+
+@media (max-width: 900px){
+ 
+  .header{
+    text-align: center;
+  }
+
+  .embassy-information-form {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .embassy-information-form > *{
+    width: 600px;
+    max-width: 100%;
+  }
+
+  .embassy-info-card{
+    max-width: 600px;
+    margin-inline: auto;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .embassy-information-form {
+      padding: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .embassy-information-form {
+      padding: 2rem;
+  }
+}

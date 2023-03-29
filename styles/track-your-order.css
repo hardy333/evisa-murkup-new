@@ -61,3 +61,61 @@
   color: var(--clr-text-1);
 
 }
+
+@media (max-width: 800px){
+
+  .track-order h2{
+    font-size: 2.2rem;
+  }
+
+}
+
+@media (max-width: 600px){
+
+  .track-order h2{
+    font-size: 2.2rem;
+  }
+
+
+  .track-order-form{
+    margin-top: 5rem;
+    padding: 4rem;
+  }
+
+}
+
+@media (max-width: 400px){
+  .header{
+    text-align: center;
+  }
+
+  .track-order h2{
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 1rem;
+  }
+
+  .track-order-form{
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .track-order__container{
+    margin-top: 2rem;
+  }
+
+  .track-order-form input{
+    font-size: 1.4rem;
+  }
+
+  .track-order-form input::placeholder{
+    font-size: 1.4rem;
+  }
+
+  .track-order-form a{
+    justify-content: center;
+  }
+
+
+}

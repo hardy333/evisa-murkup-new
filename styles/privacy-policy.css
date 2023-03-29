@@ -53,3 +53,19 @@
   text-decoration: underline;
   color: var(--clr-text-1);
 }
+
+@media (max-width: 600px){
+  .header{
+    text-align: center;
+  }
+  
+  .privacy-policy__content > h2 {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+
+  .privacy-policy__container{
+    text-align: center;
+  }
+}
