@@ -116,6 +116,7 @@
   font-size: 22px;
   line-height: 25px;
   justify-content: center;
+  text-transform: capitalize;
 }
 
 @media (max-width: 1200px){

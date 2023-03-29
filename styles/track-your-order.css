@@ -15,28 +15,28 @@
 
   color: var(--clr-text-1);
 
-
-
 }
 
 .track-order-form{
   margin: auto;
   margin-top: 10rem;
-
   display: flex;
   flex-direction: column;
   padding: 40px 60px;
   gap: 28px;
   background: rgba(176, 223, 255, 0.3);
   border-radius: 2px;
-
   max-width: 64rem;
 
 }
 
 .track-order-form h3{
-  margin-bottom: 1.4rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
 
+.track-order-form__line{
+  border: 1px solid #ffffffc8;
 }
 
 .track-order-form .btn{
