@@ -46,7 +46,7 @@ function closePrevFaq(currCollapse, currButton) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const activeFaqButton = document.querySelector(".accordion-button--active");
   if (activeFaqButton) {
     const accordionHeding = activeFaqButton.parentElement;
@@ -57,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
     collapse.style.height = sccrollHeight + "px";
   }
 });
+document.addEventListener("DOMContentLoaded", () => {});
