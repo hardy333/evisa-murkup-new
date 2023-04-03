@@ -247,4 +247,9 @@
     gap: 2rem;
   }
   
+  .pre-app-form__container{
+    gap: 3rem;
+    padding: 2rem;
+  }
+  
 }

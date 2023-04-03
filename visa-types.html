@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="./styles/index.css">
 
   <link rel="stylesheet" href="styles/visa-types.css">
+  <!-- Select input css -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/input.css">
+
 
   <title>evisa | home</title>
 </head>
@@ -102,17 +106,34 @@
             <!-- 1 -->
             <div class="pre-app-form__input-container">
               <label for="nationality">nationality</label>
-              <input class="input" type="text">
+              <!--  select input 1 -->
+              <select class="select-input" id="nationality" name="nationality">
+                <option selected value="1">Georgia</option>
+                <option value="2">Spain</option>
+                <option value="3">Germany</option>
+                <option value="3">Germanysdkdkj djkdk dkjkjdhjkhdkjhdkjdhkjdhjdh dkjdhkd dkjd jkd hdk</option>
+              </select>
             </div>
             <!-- 2 -->
             <div class="pre-app-form__input-container">
-              <label for="nationality">As fast as</label>
-              <input class="input" type="text">
+              <label for="speed">As fast as</label>
+              <!--  select input 2 -->
+              <select class="select-input" id="speed" name="speed">
+                <option selected value="1">1 day</option>
+                <option value="2">2 day</option>
+                <option value="3">3 day</option>
+              </select>
             </div>
             <!-- 3 -->
             <div class="pre-app-form__input-container">
-              <label for="nationality">Currency</label>
-              <input class="input" type="text">
+              <label for="currency">Currency</label>
+              <!--  select input 3 -->
+              <select class="select-input" id="currency" name="currency">
+                <option selected value="1">GPB</option>
+                <option value="2">EUR</option>
+                <option value="3">USD</option>
+                <option value="3">GEL</option>
+              </select>
             </div>
           </div>
           <button class="btn" type="submit" role="button">Apply now</button>
@@ -311,7 +332,9 @@
   <!-- Main Footer -->
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/select.js"></script>
   <script src="./js/main.js"></script>
 
 </body>
