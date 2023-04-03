@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./styles/components.css">
   <link rel="stylesheet" href="./styles/index.css">
 
+  <!-- Select input css -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/input.css">
+
   <title>evisa | home</title>
 </head>
 
@@ -64,8 +68,23 @@
           <p>Get visa now!</p>
         </header>
         <form class="get-started" action="#">
-          <input class="input" type="text" placeholder="I'm From ...">
-          <input class="input" type="text" placeholder="I'm Traveling To">
+          <!--  select input 1 -->
+          <select class="select-input" name="coming_from">
+            <option disabled readonly selected value="">I'm from</option>
+            <option value="1">Georgia</option>
+            <option value="2">Spain</option>
+            <option value="3">Germany</option>
+            <option value="3">Germanysdkdkj djkdk dkjkjdhjkhdkjhdkjdhkjdhjdh dkjdhkd dkjd jkd hdk</option>
+          </select>
+
+          <!--  select input 2 -->
+          <select class="select-input" name="coming_from">
+            <option value="">I'm going to</option>
+            <option value="1">Georgia</option>
+            <option value="2">Spain</option>
+            <option value="3">Germany</option>
+          </select>
+
           <div class="get-started__hr" aria-hidden="true"></div>
           <button class="btn" role="button" type="button">GET STARTED</button>
         </form>
@@ -385,6 +404,9 @@
 
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/select.js"></script>
   <script src="./js/main.js"></script>
 
 </body>

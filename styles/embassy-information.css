@@ -13,6 +13,7 @@
   padding: 40px 84px;
   gap: 40px;
 
+  align-items: center;
 
   background: rgba(176, 223, 255, 0.3);
   border-radius: 2px;
@@ -21,11 +22,21 @@
 
 }
 
-.embassy-information-form .input{
-  flex-grow: 1;
+.embassy-information-form .select2-container{
+  width: 350px !important;
+
 }
+
+.embassy-information-form__hr{
+  height: 50px;
+  width: 1px;
+  background-color: #fff;
+
+}
+
 .embassy-information-form .btn{
-  margin-left: 40px;
+  height: 50px;
+  flex-grow: 1;
 }
 
 .embassy-info-list{
@@ -110,11 +121,19 @@
     padding: 3rem;
   }
 
+
   .embassy-information-form > *{
-    width: 600px;
+    width: 550px !important;
     max-width: 100%;
   }
+  .embassy-information-form .select2-container{
+    width: 550px !important;
+  }
 
+  .embassy-information-form__hr{
+    display: none;
+  }
+  
   .embassy-info-card{
     max-width: 600px;
     margin-inline: auto;
