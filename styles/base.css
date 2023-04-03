@@ -39,6 +39,10 @@ body{
 
 }
 
+*:focus{
+  outline-color: black;
+}
+
 h1,h2,h3,h4{
   font-weight: bold;
 
