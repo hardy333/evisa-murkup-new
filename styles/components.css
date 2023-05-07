@@ -16,8 +16,6 @@
 
   line-height: 1.8rem;
   font-weight: normal;
-
-
   color: var(--clr-text-2);
   
 
@@ -34,7 +32,19 @@
 /* Inputs */
 
 .input,
+input,
 textarea{
+  border: 1px solid var(--clr-brand);
+  border-radius: 2px;
+  padding: 16px 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--clr-brand);
+  line-height: 18px;
+
+}
+
+select{
   border: 1px solid var(--clr-brand);
   border-radius: 2px;
   padding: 16px 20px;

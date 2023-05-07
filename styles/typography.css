@@ -11,7 +11,7 @@
   font-display: swap;
 } */
 
-
+/* 
 @font-face {
   font-family: "Spartan";
   font-weight: 100;
@@ -30,32 +30,32 @@
   font-weight: 300;
   src: url("../fonts/spartan-cufonfonts/Spartan-Light.ttf");
   
-}
-@font-face {
+} */
+/* @font-face {
   font-family: "Spartan";
   font-weight: 400;
   src: url("../fonts/spartan-cufonfonts/Spartan-Regular.ttf");
   
-}
+} */
 @font-face {
   font-family: "Spartan";
   font-weight: 500;
   src: url("../fonts/spartan-cufonfonts/Spartan-Medium.ttf");
   
 }
-@font-face {
+/* @font-face {
   font-family: "Spartan";
   font-weight: 600;
   src: url("../fonts/spartan-cufonfonts/Spartan-SemiBold.ttf");
   
-}
+} */
 @font-face {
   font-family: "Spartan";
   font-weight: 700;
   src: url("../fonts/spartan-cufonfonts/Spartan-Bold.ttf");
   
 }
-@font-face {
+/* @font-face {
   font-family: "Spartan";
   font-weight: 800;
   src: url("../fonts/spartan-cufonfonts/Spartan-ExtraBold.ttf");
@@ -66,4 +66,4 @@
   font-weight: 900;
   src: url("../fonts/spartan-cufonfonts/Spartan-Black.ttf");
   
-}
+} */

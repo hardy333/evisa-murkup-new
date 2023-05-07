@@ -1,0 +1,43 @@
+.app-steps-container{
+  margin-top: 2rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.app-step{
+  width: 100px;
+  height: 2px;
+  background-color: var(--clr-primary);
+  position: relative;
+
+  
+}
+
+.app-step::before{
+  content: "";
+  position: absolute;
+  --size: 8px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--clr-primary);
+
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%) rotate(45deg);
+
+}
+
+.app-step:last-child:before{
+  border-radius: 50%;
+}
+
+
+.app-step--completed{
+  background-color: var(--clr-brand);
+
+}
+
+.app-step--completed::before{
+  background-color: var(--clr-brand);
+}

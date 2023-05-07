@@ -1,0 +1,210 @@
+.app{
+  padding-top: 10rem;
+
+}
+
+.app header h1{
+  font-size: 4rem;
+}
+
+.app__container{
+  margin-top: 6rem;
+  /* background-color: red; */
+  min-height: 500px;
+}
+
+.app__container h2{
+  font-size: 28px;
+  font-weight: 500;
+  color: #274E68;
+
+}
+
+
+/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+
+.app-form{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.app-form-line{
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-primary);
+}
+
+
+
+.app-form-row{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 16px;
+  background: rgba(176, 223, 255, 0.3);
+  border-radius: 2px;
+}
+
+.app-form-row .select2-container,
+.app-form-row input{
+  width: 100% !important;
+  height: 50px;
+}
+
+
+.app-form-row input{
+  color: var(--clr-text-1);
+  border-color: var(--clr-text-1);
+}
+
+.app-form-row input::placeholder{
+  color: var(--clr-text-1);
+}
+
+.app-form-btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.app-form .btn{
+  display: block;
+  margin-inline: auto;
+}
+
+.app-form-btn-container .btn{
+  margin: 0;
+}
+
+
+.app-form-row-container{
+  width: 100%;
+}
+
+.app-form-row__label{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Brand color */
+
+  color: #385C94;
+  margin-bottom: 7px;
+
+
+}
+
+.app-form-input-group{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+}
+
+
+/* Info/Price Box */
+/* Info/Price Box */
+/* Info/Price Box */
+.app-form-info{
+
+}
+
+.app-form-info h3{
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Brand color */
+
+  color: #385C94;
+  margin-bottom: 5px;
+
+}
+
+.app-form-info__box{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 20px;
+  gap: 16px;
+  isolation: isolate;
+
+  width: 360px;
+
+  background: #FFFFFF;
+  border-radius: 2px;
+
+}
+
+.app-form-info__box ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem
+
+}
+
+.app-form-info__box li{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  /* Primary color */
+
+  color: #B0DFFF;
+
+}
+
+.app-form-info__box span{
+  color: var(--clr-text-1);
+  margin-left: 5px;
+
+}
+
+.app-form-info__box li:last-child span{
+  margin-left: 0;
+}
+
+/* App price checbox  */
+/* App price checbox  */
+.app-form-box-container{
+  display: flex;
+  gap: 16px;
+  width: 100%;
+
+}
+.app-form-box{
+  background-color: #fff;
+  background: #FFFFFF;
+  /* Text color */
+
+  border: 1px solid #274E68;
+  border-radius: 2px;
+  padding: 16px 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+
+}
+
+.app-form-box input{
+  width: 20px !important;
+  background-color: red;
+}

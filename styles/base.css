@@ -30,13 +30,9 @@ html{
 
 
 body{
-
-  font-family: "Spartan";
+  font-family: "Spartan", sans-serif;
   font-size: 1.6rem;
-
   color: var(--clr-text-1);
-
-
 }
 
 *:focus{
@@ -59,7 +55,7 @@ p{
 }
 
 button{
-  font-family: "Spartan";
+  font-family: "Spartan", sans-serif;
 
 }
 

@@ -4,11 +4,12 @@
   max-width: 100% !important;
 }
 
-.select2-container .select2-selection--single {
+.select2-container .select2-selection--single, select {
   height: 50px;
   border-radius: 2px !important;
   border: 1px solid #274E68;
   padding: 1rem 2rem;
+
 
 }
 

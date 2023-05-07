@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./styles/typography.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link rel="stylesheet" href="styles/app-checkout.css">
+
+  <title>evisa | home</title>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="index.html">
+        <img class="navbar__logo" src="./images/EVISA LogoMark.svg" alt="">
+      </a>
+      <button class="burger">
+        <span aria-hidden="true" class="burger__line burger__line--1"></span>
+        <span aria-hidden="true" class="burger__line burger__line--2"></span>
+        <span aria-hidden="true" class="burger__line burger__line--3"></span>
+      </button>
+
+      <div class="navbar__nav-container">
+
+        <nav class="navbar__nav">
+          <a href="#">Check status</a>
+          <a href="#">Book</a>
+          <a href="#">Manage</a>
+          <a href="#">help</a>
+        </nav>
+
+        <div class="navbar__btns">
+          <button class="btn ">
+            <img src="./images/user.png" alt="">
+            LOG IN
+          </button>
+          <div class="navbar__btns__hr"></div>
+          <button class="btn btn--outlined">
+            ENG <img src="./images/down.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- Navbar End -->
+
+
+  <main class="app-checkout-main">
+    <header class="header header--secondary">
+      <div class="container">
+        <h1>
+          Payment
+        </h1>
+      </div>
+    </header>
+    <div class="container app-checkout">
+      <form method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label asp-for="Card.Number">Credit Card Number</label>
+            <input type="text" class="form-control input" asp-for="Card.Number" placeholder="1234 5678 9012 3456"
+              required>
+            <span asp-validation-for="Card.Number" class="text-danger"></span>
+          </div>
+
+          <div class="form-group">
+            <label asp-for="Card.Name">Cardholder Name</label>
+            <input type="text" class="form-control input" asp-for="Card.Name" placeholder="Enter full name" required>
+            <span asp-validation-for="Card.Name" class="text-danger"></span>
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="col">
+            <label asp-for="Card.ExpirationYear">Expiration Year</label>
+            <input type="number" class="form-control input" asp-for="Card.ExpirationYear" placeholder="2023" required>
+            <span asp-validation-for="Card.ExpirationYear" class="text-danger"></span>
+          </div>
+          <div class="col">
+            <label asp-for="Card.ExpirationMonth">Expiration Year</label>
+            <select class="form-control input" asp-for="Card.ExpirationMonth" required>
+              <option value="">Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <span asp-validation-for="Card.ExpirationMonth" class="text-danger"></span>
+          </div>
+          <div class="col">
+            <label asp-for="Card.Ccv">CVV</label>
+            <input type="text" class="form-control input" asp-for="Card.Ccv" placeholder="123" required>
+            <span asp-validation-for="Card.Ccv" class="text-danger"></span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary mt-3" type="submit" asp-page-handler="payment" title="Edit">
+          Submit Payment
+        </button>
+        <input type="hidden" name="formId" value="@Model.FormId" />
+      </form>
+    </div>
+  </main>
+
+
+
+
+  <!-- Main Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <a href="#">
+        <img src="./images/evisa-com.png" alt="">
+      </a>
+
+      <nav class="footer__nav">
+        <ul>
+          <!-- 1 -->
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/news">News</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/Blog">Blog</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/embassies">Embassies</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/tracking">Tracking</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/faq">FAQ</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/privact-policy">Privact Policy</a>
+          </li>
+          <!-- 1 -->
+          <li>
+            <a href="/terms-and-conditions">Terms and conditions</a>
+          </li>
+        </ul>
+      </nav>
+      <p>
+        © Evisa is a registered trademark of Evisa, Inc. 2022. All rights reserved. Other products and/or company names
+        referenced or mentioned on this site and in media published by Us may be trademarks of their respective owners.
+        We have no affiliation with these companies or their owners, and our services are not endorsed by them.
+      </p>
+      <ul class="social-links">
+        <!-- 1 -->
+        <li>
+          <a href="#">
+            <img src="./images/footer/youtube.svg" alt="">
+          </a>
+        </li>
+        <!-- 1 -->
+        <li>
+          <a href="#">
+            <img src="./images/footer/linkedin.svg" alt="">
+          </a>
+        </li>
+        <!-- 1 -->
+        <li>
+          <a href="#">
+            <img src="./images/footer/facebook-f.svg" alt="">
+          </a>
+        </li>
+        <!-- 1 -->
+        <li>
+          <a href="#">
+            <img src="./images/footer/twitter.svg" alt="">
+          </a>
+        </li>
+        <!-- 1 -->
+        <li>
+          <a href="#">
+            <img src="./images/footer/instagram-alt.svg" alt="">
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </footer>
+  <!-- Main Footer -->
+
+
+
+  <script src="./js/main.js"></script>
+  <script src="./js/faq.js"></script>
+
+</body>
+
+</html>

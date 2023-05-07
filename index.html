@@ -5,6 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .hero {
+      min-height: 700px;
+      padding: 0.5rem 0rem;
+
+
+      /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.svg); */
+      /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.png); */
+      background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/hero-image.webp);
+      background-repeat: no-repeat no-repeat;
+      background-size: cover;
+      /* background-position: 0 -100px; */
+
+      color: var(--clr-brand);
+
+
+    }
+  </style>
+
 
   <!-- css -->
   <link rel="stylesheet" href="./styles/typography.css">
@@ -19,7 +38,10 @@
   <title>evisa | home</title>
 </head>
 
+
 <body>
+
+  <input type="text" placeholder="I'm going to">
   <!-- Navbar Start -->
   <header class="navbar">
     <div class="container navbar__container">
@@ -60,6 +82,13 @@
 
   <main>
 
+    <select>
+      <option value="">I'm going to</option>
+      <option value="1">Georgia</option>
+      <option value="2">Spain</option>
+      <option value="3">Germany</option>
+    </select>
+
     <!-- Hero Start -->
     <section class="hero">
       <div class="container hero__container">
@@ -67,9 +96,9 @@
           <h1>Choose your destination</h1>
           <p>Get visa now!</p>
         </header>
-        <form class="get-started" action="#">
+        <form class="get-started" action="/pre-app" method="get">
           <!--  select input 1 -->
-          <select class="select-input" name="coming_from">
+          <select class="select-input" name="from">
             <option disabled readonly selected value="">I'm from</option>
             <option value="1">Georgia</option>
             <option value="2">Spain</option>
@@ -78,7 +107,7 @@
           </select>
 
           <!--  select input 2 -->
-          <select class="select-input" name="coming_from">
+          <select class="select-input" name="to">
             <option value="">I'm going to</option>
             <option value="1">Georgia</option>
             <option value="2">Spain</option>
@@ -86,7 +115,7 @@
           </select>
 
           <div class="get-started__hr" aria-hidden="true"></div>
-          <button class="btn" role="button" type="button">GET STARTED</button>
+          <button class="btn" role="button" type="submit">GET STARTED</button>
         </form>
       </div>
     </section>
@@ -274,7 +303,10 @@
             </p>
           </article>
         </div>
-        <button class="btn btn--outlined">APPLY NOW <img src="./images/arrow-right.svg" alt=""> </button>
+        <div class="news-btn-wrapper">
+
+          <a class="btn btn--outlined">APPLY NOW <img src="./images/arrow-right.svg" alt=""> </a>
+        </div>
       </div>
     </section>
     <!-- Blog And News -->

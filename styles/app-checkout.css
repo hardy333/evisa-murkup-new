@@ -1,0 +1,58 @@
+.app-checkout-main header{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.app-checkout{
+  padding-top: 50px;
+}
+
+.app-checkout form{
+  width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+
+}
+
+.app-checkout .form-row{
+  display: flex;
+  gap: 20px;
+  background-color: var(--clr-secondary);
+  padding: 20px;
+  width: 100%;
+}
+
+
+.app-checkout .form-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+
+.app-checkout .input{
+  width: 100%;
+}
+
+
+
+.app-checkout label{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Brand color */
+
+  color: #385C94;
+  margin-bottom: 5px;
+}
