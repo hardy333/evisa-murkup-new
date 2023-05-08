@@ -13,13 +13,38 @@
 
       /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.svg); */
       /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/justin-kauffman-fM0ZBklturE-unsplash\ 2.png); */
-      background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/hero-image.webp);
+      /* background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%), url(../images/hero-image.webp);
       background-repeat: no-repeat no-repeat;
-      background-size: cover;
+      background-size: cover; */
       /* background-position: 0 -100px; */
 
       color: var(--clr-brand);
+      position: relative;
+      z-index: 1;
 
+
+    }
+
+    .hero__bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+
+    .hero__bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      background-image: linear-gradient(180deg, rgba(1, 6, 51, 0) 44.82%, #011B33 100%);
 
     }
   </style>
@@ -82,6 +107,9 @@
   <main>
     <!-- Hero Start -->
     <section class="hero">
+      <img src="./images/hero-image.webp" loading="eager" class="hero__bg-img" alt="">
+      <div class="hero__bg-overlay" aria-hidden="true"></div>
+
       <div class="container hero__container">
         <header>
           <h1>Choose your destination</h1>
