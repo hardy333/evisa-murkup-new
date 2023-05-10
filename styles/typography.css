@@ -41,6 +41,7 @@
   font-family: "Spartan";
   font-weight: 500;
   src: url("../fonts/spartan-cufonfonts/Spartan-Medium.ttf");
+  font-display: swap;
   
 }
 /* @font-face {
@@ -53,6 +54,7 @@
   font-family: "Spartan";
   font-weight: 700;
   src: url("../fonts/spartan-cufonfonts/Spartan-Bold.ttf");
+  font-display: swap;
   
 }
 /* @font-face {
