@@ -304,6 +304,7 @@ body{
   display: block;
   margin-left: auto;
   margin-top: 4rem;
+  width: 150px;
 }
 
 /* --------------- *\
@@ -642,6 +643,7 @@ body{
     gap: 2rem;
     row-gap: 4rem;
 
+
   }
 
   .destination-card img{
@@ -654,6 +656,7 @@ body{
 
   .destinations .btn{
     margin-inline: auto;
+
   }
 
   /* Blog and news */
