@@ -1,0 +1,190 @@
+.email-box{
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  gap: 71px;
+  align-items: center;
+
+  /* White */
+
+  background: #FFFFFF;
+  /* Brand color */
+
+  border: 1px solid #385C94;
+  border-radius: 2px;
+  min-height: 100px;
+
+}
+
+.email-box .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.email-box p{
+  font-weight: 500;
+
+}
+
+.email-box p.dark{
+  font-weight: 600;
+}
+
+.email-box .btn{
+  background-color: #274E68;
+}
+
+.email-box .btn--outlined  {
+  background-color: transparent;
+  border-color: #274E68;
+  margin-right: 1rem;
+}
+
+/* Profile Btns */
+
+.profile-btns-container{
+  display: flex;
+  justify-content: center;
+
+  margin-top: 4rem;
+  gap: 2rem;
+
+
+}
+
+.profile-btn{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  padding: 12px;
+  gap: 12px;
+
+  height: 54px;
+
+  background: rgba(215, 239, 255, 0.5);
+  /* Brand color */
+
+  border-radius: 4px;
+
+  border: none;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  /* Text color */
+  color: #274E68;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+
+}
+
+.profile-btn--active{
+  border-bottom: 2px solid #385C94;
+}
+
+
+/* accordion */
+.profile-accordion{
+  margin-top: 4rem;
+
+}
+
+
+/* Settings Section  */
+/* Settings Section  */
+.profile-settings-section {
+  margin-top: 4rem;
+}
+
+
+
+
+
+.profile-settings-section .settings-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--clr-secondary);
+  padding: 40px;
+
+border-radius: 2px;
+
+}
+
+.profile-settings-section .settings-row > div{
+  width: 100%;
+}
+
+.profile-settings-section .settings-row label{
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* Brand color */
+
+  color: #385C94;
+
+}
+
+.profile-settings-section .settings-row .input{
+  width: 100%;
+  padding-block: 12px;
+  height: 55px;
+  line-height: 2;
+}
+
+
+
+.profile-settings-section .btn{
+  margin-inline: auto;
+  display: block;
+  margin-top: 2rem;
+
+}
+
+
+@media (max-width: 900px ) {
+  .email-box{
+    flex-direction: column;
+    max-width: 700px;
+    margin-inline: auto;
+    text-align: center;
+    gap: 4rem;
+  }
+
+}
+
+@media (max-width: 450px ) {
+  .email-box .right{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .email-box .right .btn{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+  }
+
+  .profile-btns-container{
+    flex-direction: column;
+
+  }
+    
+  
+}

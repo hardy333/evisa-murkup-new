@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="./styles/components.css">
   <link rel="stylesheet" href="./styles/index.css">
 
-  <link rel="stylesheet" href="styles/faq.css">
+
+  <link rel="stylesheet" href="./styles/faq.css">
+  <link rel="stylesheet" href="./styles/profile.css">
 
   <title>evisa | home</title>
 </head>
@@ -56,26 +58,37 @@
   <!-- Navbar End -->
 
   <main>
-    <!-- News single  -->
-    <section class="faq">
-      <header class="header header--secondary">
-        <div class="container">
-          <h1>
-            Frequently asked questions
-          </h1>
+    <div class="container">
+      <!-- Email Box -->
+      <div class="email-box">
+        <div class="left">
+          <p>Please confirm that your email is correct.</p>
+          <p class="dark">Your documents will be sent here.</p>
         </div>
-      </header>
+        <div class="right">
+          <button class="btn btn--outlined">kandelaki@gmail.com</button>
+          <button class="btn ">Confirm</button>
+        </div>
+      </div>
 
-      <div class="container faq__container">
-        <!-- accordion -->
-        <div class="accordion" id="accordionExample">
+      <!-- Questions Buttons -->
+      <section class="profile-btns-container">
+        <button class="profile-btn profile-btn--active  btn--application">My applicants <img
+            src="./images/application.svg" alt=""></button>
+        <button class="profile-btn btn--settings">Settings <img src="./images/setting-2.svg" alt=""></button>
+      </section>
+
+
+      <!-- Applications/Questions section -->
+      <section class="profile-applications-section">
+        <div class="accordion profile-accordion" id="accordionExample">
           <!-- item 1 -->
           <div class="accordion-item">
             <!-- header -->
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                What is the purpose of your visit to the US?
+                Travel document applications
                 <img aria-hidden="true" class="faq-arrow" src="./images/arrow-down.svg" alt="">
               </button>
             </h2>
@@ -84,14 +97,7 @@
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>
-
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall
-                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                  go
-                  within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  You have no upcoming trip that we’re handling the travel documents for. Start an application.
                 </p>
               </div>
             </div>
@@ -105,7 +111,7 @@
               <button class="accordion-button accordion-button--active collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                 aria-controls="collapseTwo">
-                What is the duration of your stay?
+                Passport photo orders
                 <img aria-hidden="true" class="faq-arrow" src="./images/arrow-down.svg" alt="">
 
               </button>
@@ -115,116 +121,58 @@
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>
-
-                  Simply put, the duration of stay indicates the maximum amount of days you're allowed to visit the
-                  Schengen Area. "Day 1" is counted when you first enter the Schengen Area, and your final day is
-                  counted
-                  as the day you leave the Schengen Area.
-                </p>
-                <br>
-                <p>
-
-
-                  The mean duration of stay in the intensive care unit was 4+1.8 days. Another way of picturing the
-                  mobility of servants is to look at their duration of stay with the same master. For the nine who had
-                  left, the median duration of stay had been 1.25 years (range one to 10 years).
-                </p>
-                <br>
-                <p>
-
-                  Duration of stay of a visa refers to the longest period the visa holder is allowed to stay in China
-                  from
-                  the day following entry to China on each visit. Example 1: Q: I hold a single-entry visa with duration
-                  of stay of 30 days, and enter China on June 12.
+                  You have not sumbitted an order for Passport Photo editing/prints. Need a new Passport or Visa photo?
                 </p>
               </div>
             </div>
           </div>
           <div class="accordion-line"></div>
-
           <!-- item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Where will you be staying?
+                Passport renewal orders
                 <img aria-hidden="true" class="faq-arrow" src="./images/arrow-down.svg" alt="">
-
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>
-
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall
-                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  You have not sumbitted an order for Passport renewal. Start a new Passport renewal application?
                 </p>
               </div>
             </div>
           </div>
           <div class="accordion-line"></div>
+        </div><!-- profile faq end-->
+      </section>
 
-          <!-- item 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseFour">
-                Where do you stay in India?
-                <img aria-hidden="true" class="faq-arrow" src="./images/arrow-down.svg" alt="">
-
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>
-
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall
-                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </p>
-              </div>
-            </div>
+      <!-- Settings Section  -->
+      <section class="profile-settings-section" style="display: none;">
+        <div class="settings-row">
+          <!-- 1 -->
+          <div>
+            <label for="email">Email</label>
+            <input type="email" class="input" placeholder="kandelaki@gmail.com">
           </div>
-          <div class="accordion-line"></div>
-
-          <!-- item 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseFive">
-                Who is going to cover your expenses during travel?
-                <img aria-hidden="true" class="faq-arrow" src="./images/arrow-down.svg" alt="">
-
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p>
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall
-                  appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                  custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </p>
-              </div>
-            </div>
+          <!-- 2 -->
+          <div>
+            <label for="password">Passowrd</label>
+            <input type="password" class="input" placeholder="Old Password">
+          </div>
+          <!-- 3 -->
+          <div>
+            <label for="new-password">New Password</label>
+            <input type="password" class="input" placeholder="New Password">
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+        <button class="btn">Update my information</button>
+      </section>
 
+    </div>
+  </main>
 
 
   <!-- Main Footer -->
@@ -314,14 +262,14 @@
       </ul>
 
     </div>
-
   </footer>
   <!-- Main Footer -->
 
 
-
-  <script src="./js/main.js"></script>
   <script src="./js/faq.js"></script>
+
+  <!-- <script src="./js/main.js"></script> -->
+  <script src="./js/profile.js"></script>
 
 </body>
 

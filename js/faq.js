@@ -18,9 +18,9 @@ function handleClick(e) {
   if (collapse) {
     const sccrollHeight = collapse.scrollHeight;
     const clientHeight = collapse.clientHeight;
-    console.log(sccrollHeight);
+    console.log(sccrollHeight, clientHeight);
 
-    if (sccrollHeight === clientHeight) {
+    if (clientHeight > 0) {
       collapse.style.height = 0 + "px";
     } else {
       collapse.style.height = sccrollHeight + "px";
@@ -45,16 +45,3 @@ function closePrevFaq(currCollapse, currButton) {
     prevButton.classList.remove("accordion-button--active");
   }
 }
-
-window.addEventListener("load", () => {
-  const activeFaqButton = document.querySelector(".accordion-button--active");
-  if (activeFaqButton) {
-    const accordionHeding = activeFaqButton.parentElement;
-    const collapse = accordionHeding.nextElementSibling;
-    const sccrollHeight = collapse.scrollHeight;
-    console.log(sccrollHeight);
-
-    collapse.style.height = sccrollHeight + "px";
-  }
-});
-document.addEventListener("DOMContentLoaded", () => {});

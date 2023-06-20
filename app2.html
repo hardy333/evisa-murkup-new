@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="./styles/typography.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <link rel="stylesheet" href="styles/input.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/app-steps.css">
+  <link rel="stylesheet" href="styles/app2.css">
+
+  <title>evisa | home</title>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="./index.html">
+        <img class="navbar__logo" src="./images/EVISA LogoMark.svg" alt="">
+      </a>
+      <button class="burger">
+        <span aria-hidden="true" class="burger__line burger__line--1"></span>
+        <span aria-hidden="true" class="burger__line burger__line--2"></span>
+        <span aria-hidden="true" class="burger__line burger__line--3"></span>
+      </button>
+      <div class="navbar__nav-container">
+
+        <nav class="navbar__nav">
+          <a href="#">Check status</a>
+          <a href="#">Book</a>
+          <a href="#">Manage</a>
+          <a href="#">help</a>
+        </nav>
+
+        <div class="navbar__btns">
+          <button class="btn ">
+            <img src="./images/user.png" alt="">
+            LOG IN
+          </button>
+          <div class="navbar__btns__hr"></div>
+          <button class="btn btn--outlined">
+            ENG <img src="./images/down.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- Navbar End -->
+
+
+  <main>
+    <section class="app">
+      <header class="header header--secondary">
+        <div class="container">
+          <h1>
+            Get your documents for the United States
+          </h1>
+        </div>
+      </header>
+      <div class="container app__container">
+        <form action="/check-out?formId=@Model.Form.Id" class="app-form" method="post" id="appForm">
+          <ul class="progress">
+            <li class="step active"></li>
+            <li class="step"></li>
+            <li class="step"></li>
+            <li class="step"></li>
+          </ul>
+          <!-- App form slider start-->
+          <div class="app-slider">
+            <!-- Form Slide 1-->
+            <div class="slide">
+              <h3 class="your-app">Your Application</h3>
+              <div class="box app-form-row">
+                <div class="field-wrapper">
+                  <label for="#">I'm From</label>
+                  <select class="selector form-control" name="CountryCodeTo">
+                    <option value="GE">Georgia</option>
+                    <option value="2">Belgium</option>
+                  </select>
+                </div>
+                <div class="field-wrapper">
+                  <label for="#">Applying for</label>
+                  <select class="selector form-control" name="CountryCodeTo">
+                    <option value="GE">Georgia</option>
+                    <option value="2">Belgium</option>
+                  </select>
+                </div>
+                <div class="field-wrapper">
+                  <label for="#">E-mail</label>
+                  <input type="email" class="input form-control" name="Email" id="check-email" required />
+                  <span id="check-email-error"></span>
+                </div>
+              </div>
+            </div>
+            <!-- Form Slide 2 -->
+
+            <!-- Form Slide 3 -->
+
+            <!-- Form Slide 4 -->
+
+          </div><!-- App form slider start-->
+
+          <div class="actions">
+            <button type="button" class="btn btn-primary btn-prev">
+              Previous
+            </button>
+            <button type="button" class="btn btn-primary btn-next">
+              Continue
+            </button>
+            <button type="buttom" class="btn btn-primary btn-submit" id="submitBtn">
+              Submit
+            </button>
+          </div> <!-- Actions End-->
+          <input type="hidden" name="FormData" value="" id="applicantsJson" />
+          <input type="hidden" name="PeopleCount" value="" id="peopleCount" />
+        </form>
+      </div> <!-- Container end -->
+    </section>
+  </main>
+
+  <!-- Main Footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="https://formbuilder.online/assets/js/form-builder.min.js"></script>
+  <script src="https://formbuilder.online/assets/js/form-render.min.js"></script>
+
+
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
